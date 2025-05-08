@@ -1,0 +1,224 @@
+:root {
+    --primario: #007acc;
+    --secundario: #e0f0ff;
+    --fondo: #ffffff;
+    --texto: #333;
+    --sombra: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--secundario);
+    color: var(--texto);
+    line-height: 1.6;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primario);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px var(--sombra);
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--fondo);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--sombra);
+    margin-top: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005f99;
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primario);
+    color: white;
+}
+
+img.responsive {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--sombra);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+.volver-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primario);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px var(--sombra);
+    transition: background-color 0.3s ease;
+}
+
+.volver-btn:hover {
+    background-color: #005f99;
+}
+.modulos-en-fila {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.boton-modulo {
+    background-color: var(--primario);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px var(--sombra);
+    transition: background-color 0.3s ease;
+}
+
+.boton-modulo:hover {
+    background-color: #005f99;
+}
+
+@media (max-width: 600px) {
+    .modulos-en-fila {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.subtitulo-centrado {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: var(--primario);
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.imagen-galeria {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--sombra);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-galeria img {
+    width: 350px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.explicacion {
+    background-color: var(--fondo);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px var(--sombra);
+}
+
+.explicacion h2 {
+    text-align: center;
+    color: var(--primario);
+    margin-bottom: 1rem;
+}
+
+.explicacion p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+.pie-de-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primario);
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.imagen-pie {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.contenido-pie {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contenido-pie p {
+    margin: 0.5rem 0;
+}
