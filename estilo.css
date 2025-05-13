@@ -222,3 +222,36 @@ img.responsive {
 .contenido-pie p {
     margin: 0.5rem 0;
 }
+.galeria-index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.imagen-index {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--sombra);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-index img {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-index:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.subtitulo-galeria {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--texto);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
